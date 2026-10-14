@@ -1,6 +1,6 @@
 # Awesome-Limited-Partners-LPS-Portfolio-Management
 
-# Top Limited Partners (LPs) Portfolio Management Ecosystem
+## Top Limited Partners (LPs) Portfolio Management Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on LP Reporting, Fund Accounting Integration & Investor Portal Experiences*  
