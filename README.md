@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management?style=flat-square&color=success" alt="Open Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Limited-Partners-LPS-Portfolio-Management?style=flat-square&color=blue" alt="License" /></a>
@@ -75,7 +75,7 @@ The following table presents premier commercial platforms for GP-LP portfolio ma
 
 For emerging managers, technical General Partners, and engineering teams building sovereign fund operations stacks, open-source projects provide complete data privacy, cost predictability, and zero vendor lock-in.
 
-The repositories below are ranked in **descending order by real-time GitHub Star count**. Each repo includes a direct stargazers badge linking to the project's stargazers community.
+The repositories below are ranked in **descending order by real-time GitHub Stars_Count**. Each repo includes a direct stargazers badge linking to the project's stargazers community.
 
 ---
 
@@ -289,7 +289,7 @@ We actively welcome contributions from GPs, LPs, fund administrators, financial 
 To add or update an entry:
 1. Fork this repository.
 2. Ensure new additions align with the standards of the **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)** ecosystem.
-3. Update `README.md` following the established tabular structure for SaaS products (including specific entry pricing, free tier/trial terms, and valuation benchmarks) or the detailed format for open-source repositories (including real-time social star badges linking to `/stargazers`).
+3. Update `README.md` following the established tabular structure for SaaS products (including specific entry pricing, free tier/trial terms, and valuation benchmarks) or the detailed format for open-source repositories (including real-time social Stars_Badges linking to `/stargazers`).
 4. Submit a descriptive Pull Request highlighting official documentation or verification sources.
 
 ---
