@@ -75,7 +75,7 @@ The following table presents premier commercial platforms for GP-LP portfolio ma
 
 For emerging managers, technical General Partners, and engineering teams building sovereign fund operations stacks, open-source projects provide complete data privacy, cost predictability, and zero vendor lock-in.
 
-The repositories below are ranked in **descending order by real-time GitHub Stars_Count**. Each repo includes a direct stargazers badge linking to the project's stargazers community.
+The repositories below are ranked in **descending order by real-time GitHub_Stars_Count**. Each repo includes a direct stargazers badge linking to the project's stargazers community.
 
 ---
 
