@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="45%" stop-color="#0b162f" />
+      <stop offset="85%" stop-color="#0d1b3a" />
+      <stop offset="100%" stop-color="#060c1d" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Drop Shadow for Cards -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(10px) rotate(-1deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes dashFlow {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes shimmer {
+        0% { opacity: 0.6; }
+        50% { opacity: 1; }
+        100% { opacity: 0.6; }
+      }
+
+      .floating-card-1 {
+        animation: floatSlow 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-card-2 {
+        animation: floatReverse 8.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-card-3 {
+        animation: floatSlow 9.5s ease-in-out infinite;
+        animation-delay: -3s;
+        transform-origin: center;
+      }
+      .pulse-orb {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .data-stream {
+        stroke-dasharray: 8 6;
+        animation: dashFlow 15s linear infinite;
+      }
+      .shimmer-text {
+        animation: shimmer 3s ease-in-out infinite;
+      }
+
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+      .tagline-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+      }
+      .badge-label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glow Orbs in Background -->
+  <g class="pulse-orb" opacity="0.4">
+    <circle cx="150" cy="90" r="130" fill="#3b82f6" filter="url(#glow)" />
+    <circle cx="1080" cy="110" r="160" fill="#8b5cf6" filter="url(#glow)" />
+    <circle cx="600" cy="380" r="140" fill="#06b6d4" filter="url(#glow)" />
+  </g>
+
+  <!-- Tech Perspective Grid Lines -->
+  <g stroke="url(#gridGrad)" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Dynamic Data Flow Connecting Lines (Background Visual Network) -->
+  <g opacity="0.3">
+    <path d="M 80 340 C 220 300, 320 380, 500 350 S 800 290, 1120 330" fill="none" stroke="#38bdf8" stroke-width="2" class="data-stream" />
+    <path d="M 120 80 C 350 140, 520 60, 780 100 S 980 60, 1140 110" fill="none" stroke="#818cf8" stroke-width="1.5" class="data-stream" />
+  </g>
+
+  <!-- Ambient Dynamic Floating Data Badges in Lower / Side Canvas (low opacity, decorative background) -->
+  <g opacity="0.32" class="floating-card-1">
+    <rect x="50" y="270" width="220" height="52" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" filter="url(#dropShadow)" />
+    <circle cx="75" cy="296" r="6" fill="#10b981" />
+    <text x="92" y="301" fill="#94a3b8" font-size="12" font-family="sans-serif">Capital Calls &amp; K-1s</text>
+  </g>
+
+  <g opacity="0.32" class="floating-card-2">
+    <rect x="930" y="260" width="220" height="52" rx="10" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1" filter="url(#dropShadow)" />
+    <circle cx="955" cy="286" r="6" fill="#8b5cf6" />
+    <text x="972" y="291" fill="#94a3b8" font-size="12" font-family="sans-serif">IRR, DPI &amp; MOIC Metrics</text>
+  </g>
+
+  <g opacity="0.28" class="floating-card-3">
+    <rect x="950" y="70" width="200" height="46" rx="10" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1" filter="url(#dropShadow)" />
+    <circle cx="975" cy="93" r="5" fill="#38bdf8" />
+    <text x="990" y="97" fill="#94a3b8" font-size="11" font-family="sans-serif">ILPA-Compliant Reporting</text>
+  </g>
+
+  <!-- FOREGROUND LAYER: Typography, Badges, Brand Elements (Rendered on top, 100% visible) -->
+  <g id="foreground">
+    <!-- Top Category Badge Pill -->
+    <g transform="translate(425, 45)">
+      <rect x="0" y="0" width="350" height="34" rx="17" fill="#1e293b" fill-opacity="0.95" stroke="#38bdf8" stroke-width="1.2" filter="url(#softGlow)" />
+      <circle cx="20" cy="17" r="5" fill="#38bdf8" class="shimmer-text" />
+      <text x="36" y="22" fill="#e0f2fe" font-size="12" font-weight="700" font-family="sans-serif" letter-spacing="0.1em">★ CURATED ECOSYSTEM DIRECTORY ★</text>
+    </g>
+
+    <!-- Main Title: AWESOME LIMITED PARTNERS (LPs) -->
+    <text x="600" y="145" text-anchor="middle" class="title-text" font-size="44" fill="#ffffff" filter="url(#dropShadow)">
+      AWESOME LIMITED PARTNERS <tspan fill="url(#accentTitle)">(LPs)</tspan>
+    </text>
+
+    <!-- Subtitle: PORTFOLIO MANAGEMENT & FUND ACCOUNTING -->
+    <text x="600" y="195" text-anchor="middle" class="subtitle-text" font-size="20" fill="url(#goldGrad)">
+      PORTFOLIO MANAGEMENT &amp; FUND ACCOUNTING ECOSYSTEM
+    </text>
+
+    <!-- Divider Bar -->
+    <rect x="450" y="215" width="300" height="3" rx="1.5" fill="url(#accentTitle)" />
+
+    <!-- Tagline Description -->
+    <text x="600" y="255" text-anchor="middle" class="tagline-text" font-size="16" fill="#cbd5e1">
+      The definitive directory of Enterprise SaaS platforms, LP Portals &amp; Open-Source Fund Infrastructure
+    </text>
+
+    <!-- Feature Pills in Bottom Row -->
+    <g transform="translate(600, 310)" text-anchor="middle">
+      <!-- Pill 1 -->
+      <g transform="translate(-360, 0)">
+        <rect x="-105" y="-18" width="210" height="36" rx="18" fill="#111827" fill-opacity="0.92" stroke="#3b82f6" stroke-width="1.2" />
+        <text x="0" y="5" fill="#93c5fd" class="badge-label">💼 Private Equity &amp; VC</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-120, 0)">
+        <rect x="-105" y="-18" width="210" height="36" rx="18" fill="#111827" fill-opacity="0.92" stroke="#8b5cf6" stroke-width="1.2" />
+        <text x="0" y="5" fill="#c4b5fd" class="badge-label">📑 LP Reporting &amp; K-1s</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(120, 0)">
+        <rect x="-105" y="-18" width="210" height="36" rx="18" fill="#111827" fill-opacity="0.92" stroke="#06b6d4" stroke-width="1.2" />
+        <text x="0" y="5" fill="#a5f3fc" class="badge-label">📊 Fund Performance</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(360, 0)">
+        <rect x="-105" y="-18" width="210" height="36" rx="18" fill="#111827" fill-opacity="0.92" stroke="#10b981" stroke-width="1.2" />
+        <text x="0" y="5" fill="#a7f3d0" class="badge-label">💻 Open-Source Stacks</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metadata Line -->
+    <text x="600" y="380" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">
+      Updated for 2026 • Verified Pricing Tiers • Valuation Rankings • Real-Time GitHub Stars
+    </text>
+  </g>
+</svg>
